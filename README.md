@@ -1,4 +1,4 @@
-# deep_ty
+# deep_typhoon
 Analysis satellite images of typhoons in deep-learning (CNN), based on PyTorch.
 
 ## Requirements
