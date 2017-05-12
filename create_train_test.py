@@ -92,6 +92,9 @@ if __name__ == '__main__':
                     
                 if count_train > 30000 or count_test > 30000: # upper limit of files count in a dir
                     break
-                
+            
+	    if i % 100 == 99 :
+	        print 'have processed ',i+1,' files.'
+		
     print 'items in train set: ',count_train
     print 'items in test set: ',count_test
