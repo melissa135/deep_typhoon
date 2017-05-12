@@ -41,6 +41,9 @@ if __name__ == '__main__':
             
         tid_time = name[0]+'_'+name[1]+'_'+name[2]+'_'+name[3]
         tys_time[tid_time] = wind
+        
+        if i % 100 == 99 :
+	    print 'have processed ',i+1,' samples.'
 
     tys = sorted(tys.iteritems(),key=lambda asd:asd[1],reverse=True)
     for ty in tys:
