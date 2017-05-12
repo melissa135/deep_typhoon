@@ -12,7 +12,7 @@ if __name__ == '__main__':
     path_ = os.path.abspath('.')
 
     net = Net() 
-    net.load_state_dict(torch.load(path_+'net_relu.pth')) # your net
+    net.load_state_dict(torch.load(path_+'/net_relu.pth')) # your net
 
     testset = ImageFolder(path_+'/test_set/',transform) # your test set
 
