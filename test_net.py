@@ -24,11 +24,11 @@ if __name__ == '__main__':
     for i in range(0,testset.__len__()):
         
         image, actual = testset.__getitem__(i)
-        image = image.expand(1,image.size(0),image.size(1),image.size(2))
+        image = image.expand(1,image.size(0),image.size(1),image.size(2)) # a batch with 1 sample
         name = testset.__getitemName__(i)
         
         output = net(Variable(image))
-        wind = output.data[0][0]
+        wind = output.data[0][0] # output is a 1*1 tensor
 
         name = name.split('_')
         
