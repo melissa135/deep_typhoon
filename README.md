@@ -17,12 +17,12 @@ Pytorch
 After 10 epoches training we can get a CNN regressor which mean loss in train set is about 8 (kt) and in test set is about 10 (kt).  
 ![](https://raw.githubusercontent.com/melissa135/deep_typhoon/master/loss_sequence.png)  
 
-Downloading images and training CNN may take a long time. Here I offerd a trained CNN named net_relu.pth, so that you can directly use it in step4 and skip step1-3. But you need to prepare your test set by running create_samples.py with some necessary modified.  
+Downloading images and training CNN may take a long time. Here I offerd a trained CNN named `net_relu.pth`, so that you can directly use it in step 4 and skip step 1-3. But you need to prepare your test set by running `create_samples.py` with some necessary modified.  
 
 ## Tips
 * Memory should be at least 1.5G .  
 * This project is written without `cuda()`, while you can use `cuda()` to transfer the CNN onto GPU and speedup the training.  
-* The images and labels are crawled from [agora.ax.nii.ac.jp/digital-typhoon](agora.ax.nii.ac.jp/digital-typhoon) , and the labels are refered to JMA(Japan Meteorological agency).  
+* The images and labels are crawled from agora.ax.nii.ac.jp/digital-typhoon , and the labels are refered to JMA(Japan Meteorological agency).  
 
 ## More Information
 See ...
