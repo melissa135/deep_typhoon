@@ -17,5 +17,9 @@ Pytorch
 Downloading images and training CNN may take a long time. Here I offerd a trained CNN named net_relu.pth, so that you can directly use it in step4 and skip step1-3. But you need to prepare your test set by running create_samples.py with some necessary modified.  
 
 ## Tips
+* Memory should be at least 1.5G .  
+* This project is written without cuda(), while you can use cuda() to transfer the CNN onto GPU and speedup the training.  
+* The images and labels are crawled from agora.ax.nii.ac.jp/digital-typhoon , and the labels are refered to JMA(Japan Meteorological agency).  
 
 ## More Information
+See ...
