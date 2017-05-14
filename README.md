@@ -14,7 +14,7 @@ Pytorch
 3. Run train_net.py to train CNN with the train set, the trained CNN will be saved as a disk file named net_relu.pth.  
 4. Run test_net.py, analysis the test set with the CNN saved in previous step.  
 
-Downloading iamges and training CNN may take a long time. Here I offerd a trained CNN named net_relu.pth, so that you can directly use it in step4 and skip step1-3. But you need to prepare your test set by running create_samples.py with some necessary modified.  
+Downloading images and training CNN may take a long time. Here I offerd a trained CNN named net_relu.pth, so that you can directly use it in step4 and skip step1-3. But you need to prepare your test set by running create_samples.py with some necessary modified.  
 
 ## Tips
 
