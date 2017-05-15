@@ -17,8 +17,8 @@ This CNN learns the relationships between the max wind speed of typhoons and the
 After 10 epoches training we can get a CNN regressor which mean loss in train set is about 8 (knots) and in test set is about 10 (knots).  
 ![](https://raw.githubusercontent.com/melissa135/deep_typhoon/master/loss_sequence.png)  
 
-Here is what this CNN thinks of the top 20 typhoons in max wind.
-`
+Here is what this CNN thinks of the top 20 typhoons in max wind.  
+```
 1 ('197920', 130.27679443359375)  
 2 ('200914', 127.7662582397461)  
 3 ('199019', 122.92172241210938)  
@@ -39,7 +39,7 @@ Here is what this CNN thinks of the top 20 typhoons in max wind.
 18 ('199230', 115.96656799316406)  
 19 ('198210', 115.96611022949219)  
 20 ('201328', 115.57132720947266)  
-`
+```
 
 Downloading images and training CNN may take a long time. Here I offerd a trained CNN named `net_relu.pth`, so that you can directly use it in step 4 and skip step 1-3. But you need to prepare your test set by running `create_samples.py` with some necessary modified.  
 
