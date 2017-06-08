@@ -1,7 +1,7 @@
 # deep_typhoon
 Analysis satellite images of typhoons by deep-learning (CNN), based on PyTorch.  
 
-This CNN learns the relationships between the max wind speed of typhoons and their satellite images from the labeled train set (obtained from agora/JMA), then it can estimate the wind of typhoons by the no-label images.
+This CNN learns to map the satellite images of typhoons to their max wind speed from. The labeled train set is obtained from agora/JMA.
 
 ## Requirements
 * BeautifulSoup  
@@ -9,15 +9,15 @@ This CNN learns the relationships between the max wind speed of typhoons and the
 * Pytorch  
 
 ## Usage
-1. Run `download_agora.py` to download the satellite images of typhoons as the raw data, save them in folder `tys_raw`.  
-2. Run `create_samples.py` to convert raw data into the legal samples for our CNN, create two new forlder `train_set` and `test_set`.  
-3. Run `train_net.py` to train CNN with the train set, the trained CNN will be saved as a disk file `net_relu.pth`.  
-4. Run `test_net.py`, analysis the test set with the CNN saved in previous step.  
+1. Run `download_agora.py`, download the satellite images of typhoons to folder `tys_raw`.  
+2. Run `create_samples.py`, convert raw data into the legal samples for our CNN, create two new forlder `train_set` and `test_set`.  
+3. Train CNN using `train_net.py`, the trained CNN will be saved as a disk file `net_relu.pth`.  
+4. Run `test_net.py`, analysis the test set.  
 
-After 10 epoches training we can get a CNN regressor which mean loss in train set is about 8 (knots) and in test set is about 10 (knots).  
+After 10 epoches training the CNN regressor reached mean loss about 8 (knots) in train set and about 10 (knots) in test set.  
 ![](https://raw.githubusercontent.com/melissa135/deep_typhoon/master/loss_sequence.png)  
 
-Here is what this CNN thinks of the top 20 typhoons in max wind.  
+Here is what this CNN thinks of the top 20 typhoons sorted by max wind.  
 ```
 1 ('197920', 130.27679443359375)  
 2 ('200914', 127.7662582397461)  
@@ -40,8 +40,6 @@ Here is what this CNN thinks of the top 20 typhoons in max wind.
 19 ('198210', 115.96611022949219)  
 20 ('201328', 115.57132720947266)  
 ```
-
-Downloading images and training CNN may take a long time. Here I offerd a trained CNN named `net_relu.pth`, so that you can directly use it in step 4 and skip step 1-3. But you need to prepare your test set by running `create_samples.py` with some necessary modified.  
 
 ## Tips
 * Memory should be at least 1.5G .  
