@@ -1,7 +1,9 @@
 # deep_typhoon
 Analysis satellite images of typhoons by deep-learning (CNN), based on PyTorch.  
 
-This CNN learns to map the satellite images of typhoons to their max wind speed from. The labeled train set is obtained from agora/JMA.
+This CNN learns to map the satellite images of typhoons to their max wind speed from. The labeled train set is obtained from agora/JMA.    
+    
+Online analysis: http://www.predictor.xin/typhoon/
 
 ## Requirements
 * BeautifulSoup  
