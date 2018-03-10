@@ -49,4 +49,4 @@ Here is what this CNN thinks of the top 20 typhoons sorted by max wind.
 * The images and labels are crawled from agora.ax.nii.ac.jp/digital-typhoon , and the labels are refered to JMA(Japan Meteorological agency).  
 
 ## More Information
-See ...
+See https://mp.weixin.qq.com/s/PBm6sre7u3pEbx_aqjZLwA    
